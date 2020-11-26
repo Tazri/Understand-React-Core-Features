@@ -6,11 +6,48 @@ import React, { Component } from 'react'
 //import profile
 import Profile from './profile'
 
+//import css file from profile for container class style
+import './profile/profile.style.css'
+
+//Import Bio from profile
+import Bio from './profile/bio'
+
+//Import skill from profile
+import Skills from './profile/skills'
+
+//import socialLinks from profile
+import SocialLinks from './profile/socialLinks'
+
 //import MyProps for understand Props 
-import MyProps from './props'
+// import MyProps from './props'
 
 class App extends Component{
     
+    //Data for user two for profile card
+    userTwo = {
+        name : 'Pentm Focasa',
+        title : 'I am will be hacker.I will created by Md Tazri in future',
+        skills : {
+            skillOne : 'Python',
+            skillTwo : 'Kali Linux',
+            skillThree : 'Black Hacker',
+            skillFour : 'White Hacker'
+        }
+    }
+    //End User two data for profile
+
+    //Data for user Three for profile card
+    userThree = {
+        name : 'Unknow',
+        title : 'He/She is unknow person.No one know about him/her.',
+        skills: {
+            skillOne : 'Unknow',
+            skillTwo : 'Unknow',
+            skillThree : 'Unknow',
+            skillFour : 'Unknow'
+        }
+    }
+
     render(){
 
         //name variable
@@ -83,9 +120,51 @@ class App extends Component{
         return (
             <div className="App">
                 <Profile/>
-                <MyProps name='Md Tazri'/>
+                {/* <MyProps name='Md Tazri'/>
                 <MyProps name='Md Meraz'/>
-                <MyProps name='Pentm Focasa'/>
+                <MyProps name='Pentm Focasa'/> */}
+                
+                {/* profile two for secound user */}
+                <div className="container">
+                    {/* userTwo Bio */}
+                    <Bio name={this.userTwo.name} title={this.userTwo.title}/>
+                    {/* end user Two bio */}
+
+                    {/* userTwo skills */}
+                    <Skills
+                        skillA={this.userTwo.skills.skillOne}
+                        skillB={this.userTwo.skills.skillTwo}
+                        skillC={this.userTwo.skills.skillThree}
+                        skillD={this.userTwo.skills.skillFour}
+                    />
+                    {/* End userTwo Skills */}
+
+                    {/* user two social links */}
+                    <SocialLinks/>
+                    {/* end user two social links */}
+                </div>
+                {/* end profile two for secound user */}
+
+                {/* profile three for unknow person */}
+                <div className="container">
+                    {/* unknow person bio */}
+                    <Bio name={this.userThree.name} title={this.userThree.title}/>
+                    {/* end unknow person bio */}
+
+                    {/* unknow person skills */}
+                    <Skills
+                        skillA={this.userThree.skills.skillOne}
+                        skillB={this.userThree.skills.skillTwo}
+                        skillC={this.userThree.skills.skillThree}
+                        skillD={this.userThree.skills.skillFour}
+                    />
+                    {/* end unknow person skills */}
+
+                    {/* social link for unknow person */}
+                    <SocialLinks/>
+                    {/* end social link for unknow person */}
+                </div>
+
             </div>
         )
     }

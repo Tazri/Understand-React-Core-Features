@@ -1,8 +1,8 @@
 import React from 'react'
 
-const MyProps = (props)=>{
-    // console.log('MyProps - ',props);
-    return <h1>My Name is {props.name}</h1>
-}
+// const MyProps = (props)=>{
+//     // console.log('MyProps - ',props);
+//     return <h1>My Name is {props.name}</h1>
+// }
 
-export default MyProps
+// export default MyProps

@@ -9,9 +9,21 @@ import Skills from './skills'
 import SocialLinks from './socialLinks'
 
 class Profile extends React.Component{
+
+    //user data for card profile
+    userOne = {
+        name : 'Md Tazri',
+        title : 'I am a student and I learn web developer.One day i become web developer.',
+        skills : {
+            skillOne : 'Html',
+            skillTwo : 'JavaScript',
+            skillThree : 'Css',
+            skillFour : 'Bootstrap'
+        }
+    }
+
     render(){
         // console.log('This Props -',this.props);
-
         return (
             <div className='container'>
 
@@ -47,11 +59,15 @@ class Profile extends React.Component{
                 {/* end social link */}
 
                 {/* bio */}
-                <Bio/>
+                <Bio name={this.userOne.name} title={this.userOne.title}/>
                 {/* end bio */}
 
                 {/* skills */}
-                <Skills/>
+                <Skills skillA={this.userOne.skills.skillOne}
+                        skillB={this.userOne.skills.skillTwo}
+                        skillC={this.userOne.skills.skillThree}
+                        skillD={this.userOne.skills.skillFour}
+                />
                 {/* end skills */}
 
                 {/* social links */}
