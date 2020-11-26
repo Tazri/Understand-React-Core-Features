@@ -6,6 +6,9 @@ import React, { Component } from 'react'
 //import profile
 import Profile from './profile'
 
+//import MyProps for understand Props 
+import MyProps from './props'
+
 class App extends Component{
     
     render(){
@@ -80,6 +83,9 @@ class App extends Component{
         return (
             <div className="App">
                 <Profile/>
+                <MyProps name='Md Tazri'/>
+                <MyProps name='Md Meraz'/>
+                <MyProps name='Pentm Focasa'/>
             </div>
         )
     }

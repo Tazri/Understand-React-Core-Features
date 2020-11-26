@@ -10,6 +10,8 @@ import SocialLinks from './socialLinks'
 
 class Profile extends React.Component{
     render(){
+        // console.log('This Props -',this.props);
+
         return (
             <div className='container'>
 
