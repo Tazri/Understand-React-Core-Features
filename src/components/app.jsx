@@ -1,29 +1,32 @@
 import React, { Component } from 'react'
 
 //Costum component in ract 
-let MyComponent = ()=><h1>Hello World,My name is Md Tazri</h1>
+// let MyComponent = ()=><h1>Hello World,My name is Md Tazri</h1>
+
+//import profile
+import Profile from './profile'
 
 class App extends Component{
     
     render(){
 
         //name variable
-        let name = 'Md Tazri'
+        // let name = 'Md Tazri'
 
         //attribute for h1 tag
-        let attribute = {
-            title : 'I am Md Tazri',
-            id : 'MdTazri'
-        }
+        // let attribute = {
+        //     title : 'I am Md Tazri',
+        //     id : 'MdTazri'
+        // }
         //end attribute for h1 tag
 
         //bio for me
-        let bio = (
-            <div>
-                <h3>My name is Md Tazri</h3>
-                <p>One day i will be programmer and web developer</p>
-            </div>
-        )
+        // let bio = (
+        //     <div>
+        //         <h3>My name is Md Tazri</h3>
+        //         <p>One day i will be programmer and web developer</p>
+        //     </div>
+        // )
 
         //React Write Code by JavaScript Core
         // return React.createElement('div',{
@@ -62,18 +65,23 @@ class App extends Component{
         // //end by react fragment sort hand
 
         //react JSX simple sugar
-        return(
-            <div className="App" {...attribute}>
-                <h1>What is JSX?</h1>
-                <p>JSX is some JavaScript code.It mean JavaScript extention.</p>
-                <MyComponent/>
-                <h2>My name is {name}</h2>
-                <hr/>
-                {bio}
+        // return(
+        //     <div className="App" {...attribute}>
+        //         <h1>What is JSX?</h1>
+        //         <p>JSX is some JavaScript code.It mean JavaScript extention.</p>
+        //         <MyComponent/>
+        //         <h2>My name is {name}</h2>
+        //         <hr/>
+        //         {bio}
+        //     </div>
+        // )
+
+        //div for Profile costum component
+        return (
+            <div className="App">
+                <Profile/>
             </div>
         )
-
-
     }
 }
 

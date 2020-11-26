@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    font-family: arial;
+}
+
+/* container style */
+.container{
+    width: 50%;
+    margin: 80px auto;
+    padding: 30px;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 4px 1px #111,
+    -2px -2px 4px 1px #111,
+    2px -2px 4px 1px #111,
+    -2px 2px 4px 1px #111;
+}
+/* end container style */
+
+/* bio style */
+.bio{
+    margin: 0px 0px 20px 0px;
+}
+
+.bio h3{
+    color: crimson;
+}
+.bio p{
+    color: tan;
+    margin-top: 2px;
+}
+/* end bio style */
+
+/* Skills style */
+
+.Skills h3{
+    color: crimson;
+}
+
+.Skills ul{
+    list-style: none;
+}
+
+.Skills ul li{
+    display: inline-block;
+    background-color: crimson;
+    color: black;
+    padding: 10px;
+    cursor: default;
+    margin: 10px 20px 10px 0px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.Skills ul li:hover{
+    border: 1px solid crimson;
+    background-color: black;
+    color: crimson;
+}
+/* end skills style */
+
+/* end social link */
+.SocialLinks h3{
+    color: crimson;
+}
+
+.SocialLinks ul{
+    list-style: none;
+}
+
+.SocialLinks ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.SocialLinks ul li a{
+    color: blueviolet;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.SocialLinks ul li a:hover{
+    color: crimson;
+}
