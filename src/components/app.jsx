@@ -1,43 +1,29 @@
 import React from 'react'
 
-class Child extends React.Component{
-    render(){
-        this.props.func(this);
-        return(
-            <div>
-                <h2>I am Child</h2>
-            </div>
-        )
-    }
-}
-
-const ChildComponent = props=>(
-    <div>
-        <h1>This is child components</h1>
-        <h3>I don't know what to do next</h3>
-        {props.children}
-    </div>
-)
 
 class App extends React.Component{
-    
-    getContext(context){
-        console.log(context);
-    }
+    // constructor(props){
+    //     super(props);
+    //     this.count = 0;
+    // }
+
+    count = 0;
 
     render(){
-        this.getContext(this);
         return(
             <div>
-                <h1>It is parent</h1>
-                {/* <Child func={this.getContext}/> */}
-                <ChildComponent>
-                    <h4>Md Tazri</h4>
-                    <p>I am programmer</p>
-                </ChildComponent>
+                <h1>What is State?</h1>
+                <p>State is some code which code contain component data.Why it need for?</p>
+                <h3>Example for why need state.</h3>
+                <h1>This is Count = {this.count} </h1>
+                <button onClick={()=>{
+                    console.log('Click.....',this.count++);
+                }}>Add One</button>
+                <h1>Why use State?</h1>
+                <p>Now we see that above.If we use normal property in JSX code.If we update this property in future so property will be update but JSX code where use out property is not update.This why We use State in React.</p>
             </div>
         )
     }
 }
 
-export default App
+export default App;
