@@ -1,0 +1,64 @@
+.container{
+    box-sizing: border-box;
+    width: 60%;
+    margin: 100px auto;
+    border: 1px solid #000;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px #666,
+                -2px -2px 2px 1px #666,
+                -2px 2px 2px 1px #666,
+                2px -2px 2px 1px #666;
+}
+
+h2{
+    color: crimson;
+}
+
+.set-timer-box{
+    margin: 30px 0px;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+.set-btn{
+    margin: 0px 30px;
+    background-color: crimson;
+    color: black;
+    border: 1px solid transparent;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border-radius: 50%;
+    transition: all 0.4s linear;
+}
+
+  
+.set-btn:hover{
+    background-color: transparent;
+    color: crimson;
+    border: 1px solid crimson;
+}
+
+
+.opt-btn{
+    margin: 0px 20px;
+    background-color: crimson;
+    border: 1px solid transparent;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.opt-btn:hover{
+    background-color: transparent;
+    border: 1px solid crimson;
+    color: crimson;
+}
+
+span{
+    color:crimson;
+}
