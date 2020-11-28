@@ -5,6 +5,7 @@ import Btn from './button/btnOne'
 
 //import style in here
 import './button/app.style.css'
+import { ConsoleWriter } from 'istanbul-lib-report';
 
 class App extends React.Component{
 
@@ -13,6 +14,14 @@ class App extends React.Component{
         textAlign : 'center',
         margin: '20px auto'
     }
+
+    //function for button in here
+    clicked = (event)=>{
+        console.log('I have clicked');
+        console.log(event);
+        console.log(event.target);
+    }
+
 
     render(){
         return(
@@ -29,7 +38,7 @@ class App extends React.Component{
 
                 {/* Now started File css */}
                 <h1>This is simpe button in App</h1>
-                <button className="button">Hover Me</button>
+                <button onClick = {this.clicked} className="button">Hover Me</button>
                 <Btn>Touch Me</Btn>
             </div>
         )

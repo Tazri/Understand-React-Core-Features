@@ -31,3 +31,26 @@ button::-moz-focus-inner{
                 4px -4px 0px 7px brown,
                 -4px 2px 0px 7px brown;
 }
+
+
+.inputStyle{
+    margin: 20px 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid crimson;
+    text-shadow: 3px 3px 0px 0px crimson;
+    transition: all 0.1s linear;
+}
+
+.inputStyle:focus{
+    border: 3px solid crimson;
+    text-shadow: 3px 3px 0px 0px crimson;
+    color: crimson;
+    background: black;
+}
+
+.inputStyle::-moz-focus-inner{
+    border: 3px solid crimson;
+    text-shadow: 3px 3px 0px 0px crimson;
+}
