@@ -1,14 +1,14 @@
 import React from 'react'
 
 // import style here
-import './btnOne.style.css'
+import nameOfClasses from './btnOne.style.module.css'
 
 class Btn extends React.Component{
     render(){
         return(
             <div>
                 <h1>This is btnOne component here</h1>
-                <button className='btn' {...this.props}>{this.props.children}</button>
+                <button className={nameOfClasses.button} {...this.props}>{this.props.children}</button>
             </div>
         )
     }

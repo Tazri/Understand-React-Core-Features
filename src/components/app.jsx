@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 //import new button
 import Btn from './button/btnOne'
 

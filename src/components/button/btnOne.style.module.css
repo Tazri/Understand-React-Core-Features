@@ -2,7 +2,7 @@ button::-moz-focus-inner{
     border: 0px;
 }
 
-button{
+.button{
     width: 140px;
     height: 40px;
     background: brown;
@@ -14,7 +14,7 @@ button{
     transition: all 0.4s linear;
 }
 
-button:hover{
+.button:hover{
     /* background: brown; */
     color:brown;
     border: 2px solid brown;

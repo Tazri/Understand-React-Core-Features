@@ -4,11 +4,11 @@
     text-align: center;
 }
 
-button::-moz-focus-inner {
+.button::-moz-focus-inner {
     border: 0;
 }
 
-button{
+.button{
     width: 130px;
     height: 40px;
     color: black;
@@ -21,7 +21,7 @@ button{
     transition: all 0.5s linear;
 }
 
-button:hover{
+.button:hover{
     color: red;
     border: 1px solid red;
     background: black;
